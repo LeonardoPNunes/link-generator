@@ -6,7 +6,8 @@ import Menu from "../../components/Menu";
 import LinkItem from "../../components/LinkItem";
 
 import api from "../../services/api";
-import { saveLink } from "../../services/storeLinks"; 
+import { saveLink } from "../../services/storeLinks";
+import logo from "../../assets/Logo.png";
 
 export default function Home(){
     const[link,setLink] = useState("");
@@ -41,7 +42,7 @@ export default function Home(){
     return(
         <div className="container-home">
             <div className="logo">
-                <img src="/logo.png" alt="logo" />
+                <img src={logo} alt="logo" />
                 <h1>Gerador De Link</h1>
                 <span>Cole seu link para encurtar 👇</span>
             </div>
